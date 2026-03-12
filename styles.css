@@ -44,7 +44,7 @@ body{
 }
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:80;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.9));-webkit-backdrop-filter:saturate(120%) blur(6px);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(0,0,0,0.04);transition:box-shadow 0.2s ease}
+.site-header{position:relative;top:0;z-index:80;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.9));-webkit-backdrop-filter:saturate(120%) blur(6px);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(0,0,0,0.04);transition:box-shadow 0.2s ease}
 .site-header.scrolled{box-shadow:0 8px 20px rgba(0,0,0,0.08)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:32px}
 .brand{flex-shrink:0}
@@ -306,6 +306,7 @@ h2{font-size:1.4rem;margin-bottom:12px}
 
 @media (min-width:1100px){
   .container{padding:0 20px}
+  .site-header{position:sticky}
   .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:32px}
   .main-nav{display:flex}
   .hamburger{display:none}
