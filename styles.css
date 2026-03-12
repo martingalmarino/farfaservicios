@@ -233,6 +233,21 @@ h2{font-size:1.4rem;margin-bottom:12px}
 .map-ctrl:first-child{border-radius:4px 4px 0 0}
 .map-ctrl:last-child{border-radius:0 0 4px 4px}
 .map-watermark{position:absolute;bottom:8px;right:12px;font-size:0.65rem;color:rgba(0,0,0,0.35);font-weight:500}
+.map-locations-list{display:none;list-style:none;padding:0;margin:16px 0 0;gap:10px}
+.map-locations-list li{display:flex;align-items:center;gap:10px;background:var(--white);padding:14px 18px;border-radius:16px;box-shadow:0 4px 14px rgba(0,0,0,0.06);font-weight:600;font-size:0.95rem}
+.map-locations-list .pin-icon{width:28px;height:28px;flex-shrink:0}
+
+@media (max-width:600px){
+  .map-simulation{border-radius:16px;min-height:220px}
+  .map-bg{min-height:220px}
+  .map-pin-labels{display:none}
+  .map-locations-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .map-controls{right:8px;top:8px}
+  .map-ctrl{width:28px;height:28px;font-size:0.9rem}
+}
+@media (max-width:380px){
+  .map-locations-list{grid-template-columns:1fr}
+}
 
 /* Related services */
 .related-grid{display:grid;grid-template-columns:1fr;gap:16px}
